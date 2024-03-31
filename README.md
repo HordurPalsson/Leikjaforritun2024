@@ -10,5 +10,5 @@
 
 ## Verkefni 2
 - [Skriftur](/Verkefni/Verkefni%202/Skriftur/)
-- [myndband fyrir Unit 1]()
+- [myndband fyrir Verkefni 2]()
 - [WebGL Build]()
