@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI coinsCollected;
-    public TextMeshProUGUI gameOverText;
     public Button restartButton;
     public GameObject titleScreen;
     public GameObject gameOver;
@@ -22,7 +21,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOver.gameObject.SetActive(false);
+        
     }
 
     public void StartGame() {
@@ -30,13 +29,12 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
         isGameActive = true;
         titleScreen.gameObject.SetActive(false);
-        
+        gameOver.gameObject.SetActive(false);
     }
 
     public void GameOver() {
         isGameActive = false;
-        gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
+        gameOver.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
