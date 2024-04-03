@@ -9,6 +9,6 @@
 
 
 ## Verkefni 2
-- [Skriftur](/Verkefni/Verkefni%202/Skriftur/)
-- [myndband fyrir Verkefni 2]()
-- [WebGL Build]()
+- [Assets](/Verkefni/Verkefni%202/Assets/)
+- [myndband fyrir Verkefni 2](https://drive.google.com/file/d/125ML1O2SB7y58iWJ30fsSaFtLRIGMAnY/view?usp=sharing)
+- [WebGL Build](/Verkefni/Verkefni%202/Verkefni%202%20WebGL%20build/)
