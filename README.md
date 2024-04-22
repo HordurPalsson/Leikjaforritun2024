@@ -18,5 +18,5 @@
 Einfaldur skotleikur sem snýst um að safna stigum
 
 - [Assets](/Verkefni/Verkefni%203/Assets/)
-- [myndband fyrir Verkefni 2]()
-- [Build]()
+- [myndband fyrir Verkefni 3]()
+- [Build](/Verkefni/Verkefni%203/Verkefni3%20BUILD/)
