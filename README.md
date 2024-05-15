@@ -27,3 +27,4 @@ Einfaldur skotleikur sem snýst um að safna stigum
 Leikurinn snýst um skjóta óvini, svo að stiga talið falli ekki í 0. Leikurinn hækkar stiga tapið sjálfkrafa á 30 sekúnda fresti. Þannig að leikmaðurinn er í kappi við stigatalið til að sjá hver getur endst lengur.
 - [Assets](/Verkefni/Verkefni%205/Verkefni%205/)
 - [myndband fyrir Verkefni 5](https://drive.google.com/file/d/1-MZsQdjH-FjzI9nMIFlUNypLiUPoI0WE/view?usp=sharing)
+- [myndband fyrir af skriptum](https://drive.google.com/file/d/1S51ZAM9MZYncUVlq4q0yEyQ4nixF1ugk/view?usp=sharing)
