@@ -15,6 +15,8 @@ public class PlayerFollow : MonoBehaviour
     {
         Vector3 desiredPosition = target.position + offset;
 
+        // Býr til smá delay til þess að auka tilfinningu á hraða leikmannsins
+
         Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
 
 

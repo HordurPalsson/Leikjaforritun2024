@@ -115,6 +115,8 @@ public class Player : MonoBehaviour
         rb.velocity = shootingDirection * pelletSpeed;
     }
 
+
+    // Bregst við þegar leikmaður kemur við óvin
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))

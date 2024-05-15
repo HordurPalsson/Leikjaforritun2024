@@ -21,7 +21,9 @@ public class PowerUp : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         audioSource = GetComponent<AudioSource>();
-    }   
+    }
+
+    // Velur á milli þriggja týpa af power-up
     public void Apply(GameObject player)
     {
         switch (type)
@@ -37,7 +39,8 @@ public class PowerUp : MonoBehaviour
                 break;
         }
     }
-
+    
+    // Bregst við þegar Player kemur við
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

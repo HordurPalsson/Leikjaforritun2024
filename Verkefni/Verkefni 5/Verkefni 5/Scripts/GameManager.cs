@@ -156,6 +156,7 @@ public class GameManager : MonoBehaviour
         titleScreenImage.SetActive(true);  // Sýnir title screen
     }
 
+    // Endurræsir leikinn
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

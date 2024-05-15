@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CustomCursor : MonoBehaviour
 {
+    /// <summary>
+    /// Breytir útlitinu á músini svo að hún passi betur við leikinn
+    /// </summary>
     private Texture2D cursorTexture;
     private Vector3 cursorPos;
     public Transform cursorSprite;

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RotateSprite : MonoBehaviour
 {
-    public Transform player; // Reference to the player's transform
-    public Camera mainCamera; // Reference to the main camera
+    public Transform player; // staðsetning leikmanns
+    public Camera mainCamera;
 
 
     void Start()
@@ -19,17 +19,19 @@ public class RotateSprite : MonoBehaviour
         RotateTowardsMouse();
     }
 
+
+    // Function sem lætur sprite snúa sér að staðsetningu músarinnar
     private void RotateTowardsMouse()
     {
-        // Get the mouse position in world space
+        // Sækir staðsetningu músarinnar
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = mainCamera.ScreenToWorldPoint(mousePosition);
 
-        // Calculate the direction from the player to the mouse
+        // Reiknar áttina frá leikmanninum að músini
         Vector3 direction = mousePosition - player.position;
-        direction.z = 0; // Ensure we only rotate on the Z axis
+        direction.z = 0; 
 
-        // Calculate the angle in degrees
+        // Reiknar út hvaða gráðu sprite-ið á að snúa sér að
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         // Apply the rotation to the sprite

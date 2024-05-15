@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject[] enemyPrefabs;
+    // Breytur
+    public GameObject[] enemyPrefabs; // Listi fyrir óvini
     public Transform player; // Staðsetning leikmannsins
     public float spawnRadius = 10f; // Radius þar sem óvinir geta birst
-    public float spawnInterval = 5f; 
+    public float spawnInterval = 5f; // Tími á milli spawns
 
     private float lastSpawnTime;
     private void Start()
@@ -18,26 +19,26 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        // Check if it's time to spawn a new enemy
+        // Kíkir hvenær síðast óvinar var spawned
         if (Time.time > lastSpawnTime + spawnInterval)
         {
             SpawnEnemy();
-            lastSpawnTime = Time.time; // Reset last spawn time
+            lastSpawnTime = Time.time; // Uppfærir last spawn time
         }
     }
 
     void SpawnEnemy()
     {
-        Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnRadius; // Get a random position in a circle around the player
-        spawnPos += (Vector2)player.position; // Adjust position relative to the player's location
+        Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnRadius; 
+        spawnPos += (Vector2)player.position; 
 
 
-        // Randomly pick an enemy prefab
+        // velur enemy prefab sjálfkrafa
         int index = Random.Range(0, enemyPrefabs.Length);
         GameObject selectedPrefab = enemyPrefabs[index];
 
 
-        // Instantiate the enemy at the calculated position
+        // Instantiate 
         Instantiate(selectedPrefab, spawnPos, Quaternion.identity);
     }
 
@@ -46,7 +47,7 @@ public class EnemySpawner : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
-            Destroy(enemy); // Destroy each enemy found
+            Destroy(enemy); // Eyðir öllum óvinum sem það finnur
         }
     }
 }
